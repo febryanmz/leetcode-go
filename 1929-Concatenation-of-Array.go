@@ -33,4 +33,5 @@ func getConcatenation(nums []int) []int {
 func main() {
 	fmt.Println(getConcatenation([]int{1, 2, 3, 4, 5}))
 	fmt.Println(getConcatenation([]int{6, 7, 8, 9, 10, 11}))
+	
 }
