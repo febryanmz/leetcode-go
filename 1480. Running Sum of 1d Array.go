@@ -13,6 +13,16 @@ func runningSum(nums []int) []int {
 	return result
 }
 
+func runSum(nums []int) []int {
+	sums := 0
+	newArr := make([]int, len(nums))
+	for i := 0; i < len(nums); i++ {
+		sums = sums + nums[i]
+		newArr[i] = sums
+	}
+	return newArr
+}
+
 func main() {
 	a := []int{1, 2, 3, 4}
 	b := []int{1, 1, 1, 1, 1}
@@ -21,4 +31,8 @@ func main() {
 	fmt.Println(runningSum(a))
 	fmt.Println(runningSum(b))
 	fmt.Println(runningSum(c))
+
+	fmt.Println("test kedua :", runSum(a))
+	fmt.Println("test kedua :", runSum(b))
+	fmt.Println("test kedua :", runSum(c))
 }
